@@ -1,0 +1,13 @@
+.hello {
+	background-color: aqua;
+	height          : 80px;
+}
+
+.world {
+	background-color: burlywood;
+}
+
+.wrapper {
+	background-color: lightcoral;
+	width           : 50%;
+}

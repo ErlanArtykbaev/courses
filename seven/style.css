@@ -1,0 +1,147 @@
+/* global settings */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin : 0;
+	padding: 0;
+}
+
+.container {
+	width     : 100%;
+	padding   : 0 30px;
+	box-sizing: border-box;
+}
+
+.wrapper_with_padding {
+	padding: 40px 0;
+}
+
+/* ------------------------- */
+
+/* main contanier */
+.main_container {
+	padding-bottom: 40px;
+}
+
+.main_page_content {
+	padding-top   : 40px;
+	display       : flex;
+	flex-direction: column;
+	gap           : 30px;
+}
+
+.main_page_content .text {
+	display        : flex;
+	justify-content: space-between;
+	align-items    : flex-end;
+}
+
+.main_page_content .text .name {
+	font-size  : 24px;
+	font-weight: bold;
+}
+
+.lang {
+	rotate   : -90deg;
+	transform: translateX(50%);
+}
+
+.img {
+	width: 100%;
+}
+
+.img img {
+	width: 100%;
+}
+
+/* ----------------------------- */
+
+/* header */
+.header {
+	border-bottom: 1px solid black;
+	padding      : 32px 0;
+}
+
+.links {
+	display        : flex;
+	justify-content: space-between;
+}
+
+.link {
+	text-transform : capitalize;
+	text-decoration: none;
+	color          : gray
+}
+
+.link.active {
+	color      : black;
+	font-weight: bold;
+}
+
+.burger {
+	display: none;
+	width  : 20px;
+}
+
+.line {
+	width           : 15px;
+	height          : 3px;
+	border-radius   : 1px;
+	background-color: black;
+}
+
+@media screen and (max-width: 576px) {
+	.header {
+		border         : none;
+		display        : flex;
+		justify-content: flex-end;
+	}
+
+	.burger {
+		display       : flex;
+		flex-direction: column;
+		gap           : 4px
+	}
+
+	.links {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.line {
+		height: 1px;
+	}
+}
+
+/* -------------------------- */
+
+
+/* about container */
+.about_container {
+	/* background-color: #F6F6F6; */
+	background-color: lightblue;
+}
+
+.about {
+	display        : flex;
+	flex-direction : column;
+	justify-content: center;
+	align-items    : center;
+	gap            : 30px;
+	width          : 40%;
+	margin         : 0 auto;
+	text-align     : center;
+}
+
+/* ------------------------- */
+
+.skills_container {
+	background-color: lightgreen;
+}

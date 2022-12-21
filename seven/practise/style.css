@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+}
+
+.skills_items {
+	display        : flex;
+	justify-content: space-between;
+	flex-wrap      : wrap;
+}
+
+.skills_item {
+	display       : flex;
+	flex-direction: column;
+	align-items   : center;
+	gap           : 20px;
+	min-width     : 180px;
+	max-width     : 280px;
+}
+
+.text {
+	text-align: center;
+}
+
+.skills_icon {
+	min-width : 80px;
+	min-height: 80px;
+	max-width : 180px;
+	max-height: 180px;
+}
+
+.skills_icon img {
+	width: 100%;
+}
+
+.stars {
+	width          : 100%;
+	display        : flex;
+	justify-content: space-between;
+}
